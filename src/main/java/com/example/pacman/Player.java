@@ -10,19 +10,20 @@ import javafx.scene.shape.Rectangle;
 import static com.example.pacman.HelloApplication.root;
 
 public class Player {
-
     Circle pacman;
-
-    //root.setOnKeyPressed()
     public Player() {
-
-        public void bevegelse(KeyEvent keyEvent){
-            if (KeyEvent.getCode() == KeyCode.W) {
-                //pacman.setX(pacman.getCenterX() + 10);
-                System.out.println("W");
-            }
-        }
+        pacman = new Circle(30,30,30);
+            root.setOnKeyPressed(e -> {
+                root.getChildren().remove(pacman);
+                switch (e.getCode()) {
+                    case DOWN -> pacman.setCenterY(pacman.getCenterY() + 10);
+                    case UP -> pacman.setCenterY(pacman.getCenterY() - 10);
+                    case LEFT -> pacman.setCenterX(pacman.getCenterX() + 10);
+                    case RIGHT -> pacman.setCenterX(pacman.getCenterX() - 10);
+                }
+                root.getChildren().add(pacman);
+            });
     };
-}
+};
 
 

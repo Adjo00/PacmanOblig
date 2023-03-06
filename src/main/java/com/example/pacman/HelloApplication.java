@@ -6,21 +6,34 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class HelloApplication extends Application {
-    Player player = new Player();
+    //public static
+    public static BorderPane root = new BorderPane();
+    Scene scene;
+    public static Pane pane = new Pane();
     int vertical = 840;
     int horizontal = 900;
-    public static BorderPane root = new BorderPane();
-    Pane pane = new Pane();
-    int position;
+
     @Override
     public void start(Stage stage) throws IOException {
 
+        map();
+        root.setCenter(pane);
+        scene = new Scene(root, vertical, horizontal);
+        stage.setTitle("Pacman");
+        stage.setResizable(true);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void map(){
         int[][] map = {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
@@ -87,14 +100,6 @@ public class HelloApplication extends Application {
                 }
             }
         }
-
-
-        root.setCenter(pane);
-        Scene scene = new Scene(root, vertical, horizontal);
-        stage.setTitle("Pacman");
-        stage.setResizable(true);
-        stage.setScene(scene);
-        stage.show();
     }
 
     public static void main(String[] args) {
