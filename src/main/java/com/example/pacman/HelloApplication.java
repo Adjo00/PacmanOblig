@@ -38,6 +38,7 @@ public class HelloApplication extends Application {
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
+        spøkelse = new Ghost(scene);
         run();
         stage.setTitle("Pacman");
         stage.setResizable(true);
@@ -57,7 +58,8 @@ public class HelloApplication extends Application {
         for(Wall w : walls){ //Laster inn veggene. går gjennom arraylisten. (Class - > navn -> arraylisten)
             w.update();
         }
-        newPlayer.update(); // oppdaterer bevegelsen til figuren.
+        spøkelse.update();
+        newPlayer.update(); // oppdaterer bevegelsen til figuren
     }));
         //Hvor mange ganger den skal runne. når den stopper, stopper greia å funke.
         time.setCycleCount(Animation.INDEFINITE);
