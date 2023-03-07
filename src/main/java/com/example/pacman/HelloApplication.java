@@ -27,8 +27,9 @@ public class HelloApplication extends Application {
     Map kart = new Map();
     public static int vertical = 980;
     public static int horizontal = 980;
+    //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
-
+//Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
 
     @Override
@@ -52,10 +53,10 @@ public class HelloApplication extends Application {
         Rectangle skjerm = new Rectangle(0,0,horizontal,vertical); // lager et rektangel som dekker skjermen (hindre hvite merker)
         skjerm.setFill(Color.BLACK);
         pane.getChildren().add(skjerm);
-        for(Wall w : walls){ //Laster inn veggene
+        for(Wall w : walls){ //Laster inn veggene. går gjennom arraylisten. (Class - > navn -> arraylisten)
             w.update();
         }
-        newPlayer.update();
+        newPlayer.update(); // oppdaterer bevegelsen til figuren.
     }));
         //Hvor mange ganger den skal runne. når den stopper, stopper greia å funke.
         time.setCycleCount(Animation.INDEFINITE);

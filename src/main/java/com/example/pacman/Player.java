@@ -16,11 +16,11 @@ public class Player extends Circle{
     private Retning retning;
     double speed = 1.5;
     public Player(Scene scene) {
-        super(30,30,tile/3);
+        super(30,30,tile/3); //error fordi float eller no?
         setFill(Color.YELLOW);
-        this.scene = scene;
+        this.scene = scene; //sier scene er d samma
         retning = Retning.NONE; // default, hvis ikke løper den vekk...
-        scene.setOnKeyPressed(e -> {
+        scene.setOnKeyPressed(e -> { //forsatt usikker på scene.
             //dette skjer før man kan gjøre noe... derfor timeline
             //Sier hvilke knapp som går hvilke retning
             switch (e.getCode()) {
