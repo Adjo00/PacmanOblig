@@ -24,6 +24,7 @@ public class HelloApplication extends Application {
     public static Pane pane = new Pane();
     public static int row = 28;
     Player newPlayer;
+    Ghost spøkelse;
     Map kart = new Map();
     public static int vertical = 980;
     public static int horizontal = 980;

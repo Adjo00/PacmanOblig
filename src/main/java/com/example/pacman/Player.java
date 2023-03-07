@@ -11,7 +11,7 @@ import javafx.scene.shape.Rectangle;
 import static com.example.pacman.HelloApplication.pane;
 import static com.example.pacman.HelloApplication.tile;
 
-public class Player extends Circle{
+public class Player extends Circle implements Figurer{
     Scene scene;
     private Retning retning;
     double speed = 1.5;
@@ -31,6 +31,7 @@ public class Player extends Circle{
             }
         });
     }
+
 
     public void update(){
         //lager en switch for å gi speed til figuren
