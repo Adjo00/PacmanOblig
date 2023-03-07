@@ -1,29 +1,48 @@
 package com.example.pacman;
 
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
-import static com.example.pacman.HelloApplication.root;
+import static com.example.pacman.HelloApplication.pane;
+import static com.example.pacman.HelloApplication.tile;
 
-public class Player {
-    Circle pacman;
-    public Player() {
-        pacman = new Circle(30,30,30);
-            root.setOnKeyPressed(e -> {
-                root.getChildren().remove(pacman);
-                switch (e.getCode()) {
-                    case DOWN -> pacman.setCenterY(pacman.getCenterY() + 10);
-                    case UP -> pacman.setCenterY(pacman.getCenterY() - 10);
-                    case LEFT -> pacman.setCenterX(pacman.getCenterX() + 10);
-                    case RIGHT -> pacman.setCenterX(pacman.getCenterX() - 10);
-                }
-                root.getChildren().add(pacman);
-            });
-    };
-};
+public class Player extends Circle{
+    Scene scene;
+    private Retning retning;
+    double speed = 1.5;
+    public Player(Scene scene) {
+        super(30,30,tile/3);
+        setFill(Color.YELLOW);
+        this.scene = scene;
+        retning = Retning.NONE; // default, hvis ikke løper den vekk...
+        scene.setOnKeyPressed(e -> {
+            //dette skjer før man kan gjøre noe... derfor timeline
+            //Sier hvilke knapp som går hvilke retning
+            switch (e.getCode()) {
+                case S -> retning = Retning.DOWN;
+                case W -> retning = Retning.UP;
+                case A -> retning = Retning.LEFT;
+                case D -> retning = Retning.RIGHT;
+            }
+        });
+    }
+
+    public void update(){
+        //lager en switch for å gi speed til figuren
+        //kan brukes for ghost for å la dem gå en vei
+        switch(retning){
+          case DOWN -> setCenterY(getCenterY() + speed);
+          case UP -> setCenterY(getCenterY() - speed);
+          case LEFT -> setCenterX(getCenterX() - speed);
+          case RIGHT -> setCenterX(getCenterX() + speed);
+        }
+        pane.getChildren().add(this);
+    }
+}
 
 
