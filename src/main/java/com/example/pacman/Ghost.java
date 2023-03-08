@@ -19,7 +19,9 @@ public class Ghost extends Circle implements Figurer {
         retningspøkelse = Retning.NONE;
     }
     public void update() {
-        switch(retningspøkelse){
+        Retning tilfeldigRetning = Retning.randomDirection();
+        System.out.println(tilfeldigRetning);
+        switch(tilfeldigRetning){
             case DOWN -> setCenterY(getCenterY() + speed);
             case UP -> setCenterY(getCenterY() - speed);
             case LEFT -> setCenterX(getCenterX() - speed);
@@ -38,7 +40,7 @@ public class Ghost extends Circle implements Figurer {
             switch (e.getCode()) {
                 case S -> retningspøkelse = Retning.DOWN;
                 case W -> retningspøkelse = Retning.UP;
-                case A -> retningspøkelse = Retning.LEFT;
+                caDse A -> retningspøkelse = Retning.LEFT;
                 case D -> retningspøkelse = Retning.RIGHT;
             }
         });

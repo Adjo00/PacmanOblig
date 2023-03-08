@@ -9,3 +9,4 @@ public enum Retning {
         return values()[(int) (Math.random() * values().length)];
     }
 }
+
