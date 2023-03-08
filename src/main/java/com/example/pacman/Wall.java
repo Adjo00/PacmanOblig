@@ -3,6 +3,8 @@ package com.example.pacman;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+import java.util.ArrayList;
+
 import static com.example.pacman.HelloApplication.pane;
 import static com.example.pacman.HelloApplication.tile;
 
@@ -13,6 +15,12 @@ public class Wall extends Rectangle {
         setFill(color);
     }
     public void update(){
+
+        /*for(Ghost g : ghost) {
+            if (player.getBoundsInParent().intersects(getBoundsInParent())) {
+
+            }
+        }*/
         pane.getChildren().add(this);
     }
 }

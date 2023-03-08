@@ -6,6 +6,7 @@ import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -25,16 +26,20 @@ public class HelloApplication extends Application {
     public static int row = 28;
     Player newPlayer;
     Ghost spøkelse;
+    Retning retning;
     Map kart = new Map();
     public static int vertical = 980;
     public static int horizontal = 980;
     //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
+    Label highscore;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
 
     @Override
     public void start(Stage stage) throws IOException {
+        highscore = new Label("HIGHSCORE:");
+        pane.getChildren().add(highscore);
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
@@ -66,6 +71,8 @@ public class HelloApplication extends Application {
         //Sier når den skal starte
         time.playFromStart();
     }
+
+
 
     public static void main(String[] args) {
         launch();

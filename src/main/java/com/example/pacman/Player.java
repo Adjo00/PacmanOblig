@@ -14,7 +14,7 @@ import static com.example.pacman.HelloApplication.tile;
 public class Player extends Circle implements Figurer{
     Scene scene;
     private Retning retning;
-    double speed = 1.5;
+    public static double speed = 1.5;
     public Player(Scene scene) {
         super(30,30,tile/3); //error fordi float eller no?
         setFill(Color.YELLOW);
@@ -30,6 +30,8 @@ public class Player extends Circle implements Figurer{
                 case D -> retning = Retning.RIGHT;
             }
         });
+
+        //if(getBoundsInLocal().intersects(getBoundsInParent()) )
     }
 
 
@@ -44,6 +46,8 @@ public class Player extends Circle implements Figurer{
         }
         pane.getChildren().add(this);
     }
+
+
 }
 
 
