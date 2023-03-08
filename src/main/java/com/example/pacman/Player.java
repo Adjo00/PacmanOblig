@@ -44,6 +44,11 @@ public class Player extends Circle implements Figurer{
           case LEFT -> setCenterX(getCenterX() - speed);
           case RIGHT -> setCenterX(getCenterX() + speed);
         }
+
+        /*if(getBoundsInParent().intersects(getBoundsInParent())){
+            System.out.println("ok");
+        }*/
+
         pane.getChildren().add(this);
     }
 

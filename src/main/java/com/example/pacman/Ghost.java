@@ -20,7 +20,7 @@ public class Ghost extends Circle implements Figurer {
     }
     public void update() {
         Retning tilfeldigRetning = Retning.randomDirection();
-        System.out.println(tilfeldigRetning);
+        //System.out.println(randomDirection);
         switch(tilfeldigRetning){
             case DOWN -> setCenterY(getCenterY() + speed);
             case UP -> setCenterY(getCenterY() - speed);

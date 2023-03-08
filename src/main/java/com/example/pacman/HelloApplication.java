@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
     Scene scene;
     public static Pane pane = new Pane();
     public static int row = 28;
-    Player newPlayer;
+    public static Player newPlayer;
     Ghost spøkelse;
     Retning retning;
     Map kart = new Map();
