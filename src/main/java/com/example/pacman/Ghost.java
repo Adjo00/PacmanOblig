@@ -17,7 +17,6 @@ public class Ghost extends Circle implements Figurer {
         setFill(Color.GREEN);
         this.scene = scene;
         retningspøkelse = Retning.NONE;
-
     }
     public void update() {
         switch(retningspøkelse){
