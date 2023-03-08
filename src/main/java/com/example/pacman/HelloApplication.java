@@ -12,6 +12,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -32,14 +33,13 @@ public class HelloApplication extends Application {
     public static int horizontal = 980;
     //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
-    Label highscore;
+    Text highscore;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
 
     @Override
     public void start(Stage stage) throws IOException {
-        highscore = new Label("HIGHSCORE:");
-        pane.getChildren().add(highscore);
+
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
@@ -63,8 +63,14 @@ public class HelloApplication extends Application {
         for(Wall w : walls){ //Laster inn veggene. går gjennom arraylisten. (Class - > navn -> arraylisten)
             w.update();
         }
+        highscore = new Text("HIGHSCORE:");
+        highscore.setX(50);
+        highscore.setY(25);
+        highscore.setFill(Color.WHITE);
+        pane.getChildren().add(highscore);
         spøkelse.update();
         newPlayer.update(); // oppdaterer bevegelsen til figuren
+
     }));
         //Hvor mange ganger den skal runne. når den stopper, stopper greia å funke.
         time.setCycleCount(Animation.INDEFINITE);

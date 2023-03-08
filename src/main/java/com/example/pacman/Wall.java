@@ -6,8 +6,7 @@ import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
 
-import static com.example.pacman.HelloApplication.pane;
-import static com.example.pacman.HelloApplication.tile;
+import static com.example.pacman.HelloApplication.*;
 
 public class Wall extends Rectangle {
 
@@ -19,11 +18,10 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
     }
     public void update(){
 
-        /*for(Ghost g : ghost) {
-            if (player.getBoundsInParent().intersects(getBoundsInParent())) {
+        if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
+            System.out.println("ok");
+        }
 
-            }
-        }*/
         pane.getChildren().add(this);
     }
     /*public void checkCollision() {

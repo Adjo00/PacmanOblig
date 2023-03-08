@@ -8,12 +8,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
-import static com.example.pacman.HelloApplication.pane;
-import static com.example.pacman.HelloApplication.tile;
+import static com.example.pacman.HelloApplication.*;
 
 public class Player extends Circle implements Figurer{
     Scene scene;
     private Retning retning;
+    public static Player newPlayer;
     public static double speed = 1.5;
     public Player(Scene scene) {
         super(30,30,tile/3); //error fordi float eller no?
