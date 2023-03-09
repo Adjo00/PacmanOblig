@@ -29,6 +29,7 @@ public class Main extends Application {
     //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
     Text highscore;
+    public static int scoreCount = 0;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
 

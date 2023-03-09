@@ -11,14 +11,15 @@ import static com.example.pacman.Player.speed;
 public class Wall extends Rectangle {
 
 public static ArrayList<Ghost> ghost = new ArrayList<>();
+    double playerX, playerY;
     public Wall(int x, int y, Color color){
         //lager alle vegger om til rektangler, og gir dem verdi
         super(x,y,tile,tile);
         setFill(color);
     }
     public void update(){
-        double x = newPlayer.getCenterX();
-        double y = newPlayer.getCenterY();
+        playerX = newPlayer.getCenterX();
+        playerY = newPlayer.getCenterY();
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             System.out.println("ok");
         }

@@ -42,12 +42,6 @@ public class Player extends Circle implements Figurer{
     public Retning getDirection() {
         return newPlayer.retning;
     }
-    public double getX() {
-        return newPlayer.getCenterX();
-    }
-    public double getY() {
-        return newPlayer.getCenterY();
-    }
 }
 
 
