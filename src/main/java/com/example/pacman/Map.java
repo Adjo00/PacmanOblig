@@ -1,10 +1,8 @@
 package com.example.pacman;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 
-import static com.example.pacman.HelloApplication.*;
+import static com.example.pacman.Main.*;
 
 public class Map {
     public void map(){
@@ -44,6 +42,9 @@ public class Map {
             for (int j = 0; j < map[i].length; j++) {
                 if (map[i][j] == 0){
                     walls.add(new Wall(j*tile, i*tile, Color.BLUE));
+                }
+                else if (map[i][j] == 1) {
+                    coins.add(new Coins(j*tile, i*tile, Color.LIGHTYELLOW));
                 }
                 else if(map[i][j] == 3){
                     walls.add(new Wall(j*tile, i*tile, Color.DARKGRAY));

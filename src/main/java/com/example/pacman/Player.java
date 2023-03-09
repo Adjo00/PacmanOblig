@@ -1,14 +1,10 @@
 package com.example.pacman;
 
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.shape.Rectangle;
 
-import static com.example.pacman.HelloApplication.*;
+import static com.example.pacman.Main.*;
 
 public class Player extends Circle implements Figurer{
     Scene scene;
@@ -16,7 +12,7 @@ public class Player extends Circle implements Figurer{
     public static Player newPlayer;
     public static double speed = 1.5;
     public Player(Scene scene) {
-        super(30,30,tile/3); //error fordi float eller no?
+        super(50,50,tile/3); //error fordi float eller no?
         setFill(Color.YELLOW);
         this.scene = scene; //sier scene er d samma
         retning = Retning.NONE; // default, hvis ikke løper den vekk...
@@ -30,10 +26,7 @@ public class Player extends Circle implements Figurer{
                 case D -> retning = Retning.RIGHT;
             }
         });
-
-        //if(getBoundsInLocal().intersects(getBoundsInParent()) )
     }
-
 
     public void update(){
         //lager en switch for å gi speed til figuren
@@ -44,15 +37,17 @@ public class Player extends Circle implements Figurer{
           case LEFT -> setCenterX(getCenterX() - speed);
           case RIGHT -> setCenterX(getCenterX() + speed);
         }
-
-        /*if(getBoundsInParent().intersects(getBoundsInParent())){
-            System.out.println("ok");
-        }*/
-
         pane.getChildren().add(this);
     }
-
-
+    public Retning getDirection() {
+        return newPlayer.retning;
+    }
+    public double getX() {
+        return newPlayer.getCenterX();
+    }
+    public double getY() {
+        return newPlayer.getCenterY();
+    }
 }
 
 

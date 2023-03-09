@@ -4,8 +4,8 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-import static com.example.pacman.HelloApplication.pane;
-import static com.example.pacman.HelloApplication.tile;
+import static com.example.pacman.Main.pane;
+import static com.example.pacman.Main.tile;
 
 public class Ghost extends Circle implements Figurer {
     Scene scene;

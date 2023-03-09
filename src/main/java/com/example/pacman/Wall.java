@@ -2,11 +2,11 @@ package com.example.pacman;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Shape;
 
 import java.util.ArrayList;
 
-import static com.example.pacman.HelloApplication.*;
+import static com.example.pacman.Main.*;
+import static com.example.pacman.Player.speed;
 
 public class Wall extends Rectangle {
 
@@ -17,7 +17,8 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
         setFill(color);
     }
     public void update(){
-
+        double x = newPlayer.getCenterX();
+        double y = newPlayer.getCenterY();
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             System.out.println("ok");
         }
