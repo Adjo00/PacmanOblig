@@ -47,7 +47,7 @@ public class Main extends Application {
         stage.show();
     }
 
-    public void run(){
+    public synchronized void run(){
         //fps basically
         Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.01), e ->{
         //Se på timeline... alt som skal kjøres / oppdateres settes her

@@ -18,8 +18,7 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
         setFill(color);
     }
     public void update(){
-        playerX = newPlayer.getCenterX();
-        playerY = newPlayer.getCenterY();
+
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             System.out.println("ok");
         }
