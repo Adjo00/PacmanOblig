@@ -1,5 +1,5 @@
 package com.example.pacman;
 
-public interface Figurer {
+public interface MyShapes {
     void update();
 }

@@ -11,7 +11,6 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -35,7 +34,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
@@ -47,7 +45,7 @@ public class Main extends Application {
         stage.show();
     }
 
-    public synchronized void run(){
+    public void run(){
         //fps basically
         Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.01), e ->{
         //Se på timeline... alt som skal kjøres / oppdateres settes her
@@ -73,9 +71,6 @@ public class Main extends Application {
         //Sier når den skal starte
         time.playFromStart();
     }
-
-
-
     public static void main(String[] args) {
         launch();
     }

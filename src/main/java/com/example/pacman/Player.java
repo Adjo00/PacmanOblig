@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import static com.example.pacman.Main.*;
 
-public class Player extends Circle implements Figurer{
+public class Player extends Circle implements MyShapes {
     Scene scene;
     private Retning retning;
     public static Player newPlayer;

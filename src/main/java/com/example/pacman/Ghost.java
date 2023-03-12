@@ -6,7 +6,7 @@ import javafx.scene.shape.Circle;
 import static com.example.pacman.Main.pane;
 import static com.example.pacman.Main.tile;
 
-public class Ghost extends Circle implements Figurer {
+public class Ghost extends Circle implements MyShapes {
     Scene scene;
     private Retning retningspøkelse;
     double speed = 1.5;
@@ -28,20 +28,4 @@ public class Ghost extends Circle implements Figurer {
         }
         pane.getChildren().add(this);
     }
-
 }
-
-
-/*
-        scene.setOnKeyPressed(e -> { //forsatt usikker på scene.
-            //dette skjer før man kan gjøre noe... derfor timeline
-            //Sier hvilke knapp som går hvilke retning
-            switch (e.getCode()) {
-                case S -> retningspøkelse = Retning.DOWN;
-                case W -> retningspøkelse = Retning.UP;
-                caDse A -> retningspøkelse = Retning.LEFT;
-                case D -> retningspøkelse = Retning.RIGHT;
-            }
-        });
-
- */
