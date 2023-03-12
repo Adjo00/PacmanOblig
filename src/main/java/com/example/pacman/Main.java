@@ -68,11 +68,11 @@ public class Main extends Application {
         highscore.setY(25);
         highscore.setFill(Color.WHITE);
         pane.getChildren().add(highscore);
+        //spøkelse.update();
         blinky.update();
         clyde.update();
         inky.update();
         pinky.update();
-        //spøkelse.update();
         newPlayer.update(); // oppdaterer bevegelsen til figuren
 
     }));

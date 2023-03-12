@@ -18,12 +18,14 @@ public class Ghost extends Circle implements MyShapes {
     public void update() {
         Retning tilfeldigRetning = Retning.randomDirection();
         //System.out.println(randomDirection);
+        /*
         switch(tilfeldigRetning){
             case DOWN -> setCenterY(getCenterY() + speed);
             case UP -> setCenterY(getCenterY() - speed);
             case LEFT -> setCenterX(getCenterX() - speed);
             case RIGHT -> setCenterX(getCenterX() + speed);
         }
+        */
         pane.getChildren().add(this);
     }
 }

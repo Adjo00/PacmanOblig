@@ -24,7 +24,6 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             System.out.println("ok");
         }
-
         pane.getChildren().add(this);
     }
 }
