@@ -17,18 +17,19 @@ import java.util.Iterator;
 
 public class Main extends Application {
     //public static
-    Scene scene;
+    public static Scene scene;
     public static Pane pane = new Pane();
     public static int row = 28;
     public static Player newPlayer;
     Ghost spøkelse;
     Retning retning;
     Map kart = new Map();
-    public static int vertical = 980;
+    public static int vertical = 1010;
     public static int horizontal = 980;
     //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
     Text highscore;
+    public static double speed = 1.5;
     public static int scoreCount = 0;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
@@ -38,7 +39,11 @@ public class Main extends Application {
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
-        spøkelse = new Ghost(scene);
+        blinky = new Blinky(scene, 530,660,tile/3,Color.RED);
+        pinky = new Pinky(scene, 660,540,tile/3,Color.PINK);
+        inky = new Inky(scene, 770,540,tile/3,Color.CYAN);
+        clyde = new Clyde(scene, 860,540,tile/3,Color.ORANGE);
+        //spøkelse = new Ghost(scene, 660,540,tile/3,Color.GREEN);
         run();
         stage.setTitle("Pacman");
         stage.setResizable(true);
@@ -63,7 +68,11 @@ public class Main extends Application {
         highscore.setY(25);
         highscore.setFill(Color.WHITE);
         pane.getChildren().add(highscore);
-        spøkelse.update();
+        blinky.update();
+        clyde.update();
+        inky.update();
+        pinky.update();
+        //spøkelse.update();
         newPlayer.update(); // oppdaterer bevegelsen til figuren
 
     }));

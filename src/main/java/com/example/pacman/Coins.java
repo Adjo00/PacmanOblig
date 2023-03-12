@@ -7,7 +7,7 @@ import static com.example.pacman.Main.pane;
 import static com.example.pacman.Main.tile;
 
 public class Coins extends Circle implements MyShapes {
-
+    //Det er 292 coins i mappet
     public Coins(int x, int y, Color color){
         super(x,y,tile/4);
         setFill(color);

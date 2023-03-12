@@ -3,17 +3,15 @@ package com.example.pacman;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import static com.example.pacman.Main.pane;
-import static com.example.pacman.Main.tile;
+
+import static com.example.pacman.Main.*;
 
 public class Ghost extends Circle implements MyShapes {
     Scene scene;
     private Retning retningspøkelse;
-    double speed = 1.5;
 
-    public Ghost(Scene scene){
-        super(660,540,tile/3);
-        setFill(Color.GREEN);
+    public Ghost(Scene scene, double x, double y, double radius){
+        super(x, y, radius);
         this.scene = scene;
         retningspøkelse = Retning.NONE;
     }
