@@ -3,7 +3,6 @@ package com.example.pacman;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-
 import static com.example.pacman.Main.*;
 
 public class Player extends Circle implements Figurer{
@@ -41,6 +40,12 @@ public class Player extends Circle implements Figurer{
     }
     public Retning getDirection() {
         return newPlayer.retning;
+    }
+    public static double lastPositionY() {
+        return newPlayer.getCenterY();
+    }
+    public static double lastPositionX() {
+        return newPlayer.getCenterX();
     }
 }
 

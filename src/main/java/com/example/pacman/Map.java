@@ -1,7 +1,6 @@
 package com.example.pacman;
 
 import javafx.scene.paint.Color;
-
 import static com.example.pacman.Main.*;
 
 public class Map {
