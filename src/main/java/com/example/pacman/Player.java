@@ -11,7 +11,7 @@ public class Player extends Circle implements MyShapes {
     public static Player newPlayer;
     public static double speed = 1.5;
     public Player(Scene scene) {
-        super(50,50,tile/3); //error fordi float eller no?
+        super(55,55,tile/3); //error fordi float eller no?
         setFill(Color.YELLOW);
         this.scene = scene; //sier scene er d samma
         retning = Retning.NONE; // default, hvis ikke løper den vekk...

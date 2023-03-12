@@ -47,7 +47,7 @@ public class Main extends Application {
 
     public void run(){
         //fps basically
-        Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.01), e ->{
+        Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.014), e ->{
         //Se på timeline... alt som skal kjøres / oppdateres settes her
         //For å oppdatere hvilke wall d blir laget.
         pane.getChildren().clear(); //for å renskeskjermen. hvis ikke blir d mange objekter stacket på hverandre. kommer til å lagge.
