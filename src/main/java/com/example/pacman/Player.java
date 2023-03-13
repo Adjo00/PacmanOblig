@@ -10,6 +10,8 @@ public class Player extends Circle implements MyShapes {
     private Retning retning;
     public static Player newPlayer;
     public static double speed = 1.5;
+    double playerX, playerY;
+    double lastPositionY, lastPositionX;
     public Player(Scene scene) {
         super(55,55,tile/3); //error fordi float eller no?
         setFill(Color.YELLOW);
@@ -39,7 +41,7 @@ public class Player extends Circle implements MyShapes {
         pane.getChildren().add(this);
     }
     public Retning getDirection() {
-        return newPlayer.retning;
+        return retning;
     }
     public static double lastPositionY() {
         return newPlayer.getCenterY();

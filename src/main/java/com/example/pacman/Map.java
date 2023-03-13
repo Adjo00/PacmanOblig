@@ -43,10 +43,10 @@ public class Map {
                     walls.add(new Wall(j*tile, i*tile, Color.BLUE));
                 }
                 else if (map[i][j] == 1) {
-                    coins.add(new Coins(j*tile+15, i*tile+15, Color.LIGHTYELLOW));
+                    coins.add(new Coins(j*tile+16, i*tile+16, Color.LIGHTYELLOW));
                 }
                 else if(map[i][j] == 2){
-                    differentWalls.add(new DifferentWall(j*tile, i*tile, Color.DARKGRAY));
+                    differentWalls.add(new DifferentWall(j*tile, i*tile, Color.BLACK));
                 }
                 else if(map[i][j] == 3){
                     walls.add(new Wall(j*tile, i*tile, Color.DARKGRAY));

@@ -46,7 +46,7 @@ public class Main extends Application {
         //spøkelse = new Ghost(scene, 660,540,tile/3,Color.GREEN);
         run();
         stage.setTitle("Pacman");
-        stage.setResizable(true);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
@@ -69,10 +69,6 @@ public class Main extends Application {
         highscore.setFill(Color.WHITE);
         pane.getChildren().add(highscore);
         //spøkelse.update();
-        blinky.update();
-        clyde.update();
-        inky.update();
-        pinky.update();
         newPlayer.update(); // oppdaterer bevegelsen til figuren
 
     }));

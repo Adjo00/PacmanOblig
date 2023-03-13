@@ -11,6 +11,9 @@ public class Wall extends Rectangle implements MyShapes {
 public static ArrayList<Ghost> ghost = new ArrayList<>();
     double playerX, playerY;
     double lastPositionY, lastPositionX;
+    double ghostX, ghostY;
+    double ghostLastPositionY, ghostLastPositionX;
+    double speed1 = 0.2;
     public Wall(int x, int y, Color color){
         //lager alle vegger om til rektangler, og gir dem verdi
         super(x,y,tile,tile);
@@ -24,6 +27,32 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             System.out.println("ok");
         }
+        for (Ghost g : ghost) {
+            if (!this.getBoundsInParent().intersects(g.getBoundsInParent())) {
+                ghostLastPositionY = g.getCenterY();
+                ghostLastPositionX = g.getCenterX();
+                switch (Retning.randomDirection()) {
+                    case DOWN -> g.setCenterY(g.getCenterY() - speed1);
+                    case UP -> g.setCenterY(g.getCenterY() + speed1);
+                    case LEFT -> g.setCenterX(g.getCenterX() + speed1);
+                    case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
+                }
+                System.out.println("treffer inni");
+            }
+            if (this.getBoundsInParent().intersects(g.getBoundsInParent())) {
+                Retning tilfeldig = Retning.randomDirection();
+                switch (tilfeldig) {
+                    case DOWN -> g.setCenterY(g.getCenterY() - speed1);
+                    case UP -> g.setCenterY(g.getCenterY() + speed1);
+                    case LEFT -> g.setCenterX(g.getCenterX() + speed1);
+                    case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
+                }
+                System.out.println("treffer vegg");
+                g.setCenterY(ghostLastPositionY);
+                g.setCenterX(ghostLastPositionX);
+            }
+        }
         pane.getChildren().add(this);
     }
 }
+

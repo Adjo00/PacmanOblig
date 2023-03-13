@@ -4,5 +4,8 @@ public enum Retning {
     public static Retning randomDirection() {
         return values()[(int) (Math.random() * values().length)];
     }
+    public static Retning getUp() {
+        return UP;
+    }
 }
 
