@@ -8,7 +8,6 @@ import static com.example.pacman.Player.speed;
 
 public class Wall extends Rectangle implements MyShapes {
 
-public static ArrayList<Ghost> ghost = new ArrayList<>();
     double playerX, playerY;
     double lastPositionY, lastPositionX;
     double ghostX, ghostY;
@@ -25,7 +24,17 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
             lastPositionX = Player.lastPositionX();
         }
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
-            System.out.println("ok");
+            playerX = newPlayer.getCenterX();
+            playerY = newPlayer.getCenterY();
+            switch(newPlayer.getDirection()){
+                case DOWN -> newPlayer.setCenterY(playerY - speed);
+                case UP -> newPlayer.setCenterY(playerY + speed);
+                case LEFT -> newPlayer.setCenterX(playerX + speed);
+                case RIGHT -> newPlayer.setCenterX(playerX - speed);
+            }
+            newPlayer.setCenterY(lastPositionY);
+            newPlayer.setCenterX(lastPositionX);
+            //System.out.println("ok");
         }
         for (Ghost g : ghost) {
             if (!this.getBoundsInParent().intersects(g.getBoundsInParent())) {
@@ -55,4 +64,5 @@ public static ArrayList<Ghost> ghost = new ArrayList<>();
         pane.getChildren().add(this);
     }
 }
+
 

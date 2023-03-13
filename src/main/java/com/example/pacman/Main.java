@@ -21,8 +21,8 @@ public class Main extends Application {
     public static Pane pane = new Pane();
     public static int row = 28;
     public static Player newPlayer;
-    Ghost spøkelse;
-    Retning retning;
+    public static Ghost blinky, pinky, inky, clyde, spøkelse;
+    public static Retning retning;
     Map kart = new Map();
     public static int vertical = 1010;
     public static int horizontal = 980;
@@ -33,16 +33,19 @@ public class Main extends Application {
     public static int scoreCount = 0;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
+    public static ArrayList<Coins> coins = new ArrayList<>();
+    public static ArrayList<Ghost> ghost = new ArrayList<>();
+    public static ArrayList<DifferentWall> differentWalls = new ArrayList<>();
 
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(pane, horizontal, vertical);
         kart.map();  // BARE EN GANG.
         newPlayer = new Player(scene);
-        blinky = new Blinky(scene, 530,660,tile/3,Color.RED);
-        pinky = new Pinky(scene, 660,540,tile/3,Color.PINK);
-        inky = new Inky(scene, 770,540,tile/3,Color.CYAN);
-        clyde = new Clyde(scene, 860,540,tile/3,Color.ORANGE);
+        blinky = new Blinky(scene, 430,540,tile/3,Color.RED);
+        pinky = new Pinky(scene, 480,540,tile/3,Color.PINK);
+        inky = new Inky(scene, 530,540,tile/3,Color.CYAN);
+        clyde = new Clyde(scene, 580,540,tile/3,Color.ORANGE);
         //spøkelse = new Ghost(scene, 660,540,tile/3,Color.GREEN);
         run();
         stage.setTitle("Pacman");
@@ -63,7 +66,25 @@ public class Main extends Application {
         for(Wall w : walls){ //Laster inn veggene. går gjennom arraylisten. (Class - > navn -> arraylisten)
             w.update();
         }
-        highscore = new Text("HIGHSCORE:");
+        for (DifferentWall df : differentWalls){
+            df.update();
+            //System.out.println(df);
+        }
+        for (Ghost g : ghost){
+            g.update();
+        }
+
+
+        Iterator<Coins> iterator = coins.iterator();
+        while (iterator.hasNext()) {
+            Coins c = iterator.next();
+            c.update();
+            if (newPlayer.getBoundsInParent().intersects(c.getBoundsInParent())) {
+                iterator.remove();
+                scoreCount++;
+            }
+        }
+        highscore = new Text("HIGHSCORE:" + scoreCount);
         highscore.setX(50);
         highscore.setY(25);
         highscore.setFill(Color.WHITE);

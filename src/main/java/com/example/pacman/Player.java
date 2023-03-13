@@ -8,7 +8,6 @@ import static com.example.pacman.Main.*;
 public class Player extends Circle implements MyShapes {
     Scene scene;
     private Retning retning;
-    public static Player newPlayer;
     public static double speed = 1.5;
     double playerX, playerY;
     double lastPositionY, lastPositionX;
