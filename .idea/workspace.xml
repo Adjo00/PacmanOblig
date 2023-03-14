@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="+workspace.xml">
+    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="One ghost now moves, but gets stuck if direction is the same">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Pinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Pinky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/MyShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/MyShapes.java" afterDir="false" />
     </list>
-    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil" />
+    <list id="7cd91b30-53f2-492b-a241-5c91f6aeb5a9" name="Changes by emil" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
+    </list>
+    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +37,29 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java">
+      <ranges>
+        <range start1="39" end1="39" start2="39" end2="44" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="56" end1="56" start2="61" end2="65" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="65" end1="66" start2="74" end2="75" changelist="7cd91b30-53f2-492b-a241-5c91f6aeb5a9" />
+        <range start1="70" end1="71" start2="79" end2="79" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="74" end1="74" start2="82" end2="83" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="75" end1="77" start2="84" end2="84" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="100" end1="100" start2="107" end2="111" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="20" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="17" end1="18" start2="24" end2="24" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="20" end1="20" start2="26" end2="30" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="21" end1="22" start2="31" end2="31" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="28" end1="56" start2="37" end2="37" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="57" end1="58" start2="38" end2="42" changelist="baf5d837-2c86-4186-ab55-6c1d6c4564f5" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -145,6 +175,7 @@
       <workItem from="1678739536572" duration="38000" />
       <workItem from="1678741001162" duration="674000" />
       <workItem from="1678750134280" duration="1525000" />
+      <workItem from="1678811656067" duration="1357000" />
     </task>
     <task id="LOCAL−00001" summary="emil">
       <created>1675254954811</created>

@@ -10,14 +10,27 @@ public class Wall extends Rectangle implements MyShapes {
 
     double playerX, playerY;
     double lastPositionY, lastPositionX;
-    double ghostX, ghostY;
     double ghostLastPositionY, ghostLastPositionX;
 
+    /**
+     * Dette er konstruktørmetoden for wall, som er en subklasse av Rectangle
+     * Wall er da alle vegger i map
+     * @param x x posisjonen til wall
+     * @param y y posisjonen til wall
+     * @param color fargen til wall
+     */
     public Wall(int x, int y, Color color){
         //lager alle vegger om til rektangler, og gir dem verdi
         super(x,y,tile,tile);
         setFill(color);
     }
+
+    /**
+     * Wall har en update metode som bruker i run() gameloopen i main.
+     * Denne metoden sjekker om pacman treffer en vegg, og hvis han gjør det, så flytter den seg tilbake til siste posisjon.
+     * Denne metoden sjekker også om pacman treffer en ghost, og hvis han gjør det, så flytter den ghosten tilbake til siste posisjon.
+     * Dette gjør den ved å bruke en random retning, og flytte ghosten deretter.
+     */
     public void update(){
         if (!newPlayer.getBoundsInParent().intersects(getBoundsInParent())) {
             lastPositionY = Player.lastPositionY();

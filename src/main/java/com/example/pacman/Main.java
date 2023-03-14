@@ -37,6 +37,11 @@ public class Main extends Application {
     public static ArrayList<Ghost> ghost = new ArrayList<>();
     public static ArrayList<DifferentWall> differentWalls = new ArrayList<>();
 
+    /**
+     * Starter programmet, setter opp scene og new'er objekter som skal brukes.
+     * @param stage
+     * @throws IOException
+     */
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(pane, horizontal, vertical);
@@ -54,6 +59,10 @@ public class Main extends Application {
         stage.show();
     }
 
+
+    /**
+     * Inneholder en TimeLine som kjører en gameloop, den oppdaterer alt av bevegelse og endringer
+     */
     public void run(){
         //fps basically
         Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.014), e ->{
@@ -68,13 +77,11 @@ public class Main extends Application {
         }
         for (DifferentWall df : differentWalls){
             df.update();
-            //System.out.println(df);
         }
         for (Ghost g : ghost){
             g.update();
+            System.out.println(ghost);
         }
-
-
         Iterator<Coins> iterator = coins.iterator();
         while (iterator.hasNext()) {
             Coins c = iterator.next();
@@ -98,6 +105,10 @@ public class Main extends Application {
         //Sier når den skal starte
         time.playFromStart();
     }
+
+    /**
+     * launch() metoden starter javaFX applikasjonen
+     */
     public static void main(String[] args) {
         launch();
     }

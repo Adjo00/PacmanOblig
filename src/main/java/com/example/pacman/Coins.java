@@ -5,18 +5,25 @@ import javafx.scene.shape.Circle;
 import static com.example.pacman.Main.*;
 
 public class Coins extends Circle implements MyShapes {
+    /**
+     * @param x x posisjonen til coins
+     * @param y y posisjonen til coins
+     * @param color fargen til coins
+     */
     //Det er 292 coins i mappet
     public Coins(int x, int y, Color color){
         super(x,y,tile/4);
         setFill(color);
     }
+
+    /**
+     * Coins har en update metode som bruker i run() gameloopen i main.
+     * Den sjekker også om coins kolliderer med pacman og oppdatere scoren.
+     */
     public void update() {
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())){
             System.out.println("Score " + scoreCount);
         }
-        //fjern fra arraylist
-        //legg til i score
-        //lag collision med coins
         pane.getChildren().add(this);
     }
 }
