@@ -8,17 +8,24 @@ import static com.example.pacman.Player.speed;
 
 public class Ghost extends Circle implements MyShapes {
     Scene scene;
-    private Retning retningspøkelse;
-
+    public static Retning retningspøkelse;
+    double speed1 = 1.5;
 
     public Ghost(Scene scene, double x, double y, double radius) {
         super(x, y, radius);
         this.scene = scene;
         retningspøkelse = Retning.UP;
-        ghost.add(this);
+
     }
 
     public void update() {
+
+        switch (retningspøkelse) {
+            case DOWN -> setCenterY(getCenterY() - speed1);
+            case UP -> setCenterY(getCenterY() + speed1);
+            case LEFT -> setCenterX(getCenterX() + speed1);
+            case RIGHT -> setCenterX(getCenterX() - speed1);
+        }
 
 
         /*

@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Ghosts now move around randomly" />
-    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
+    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="+workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Pinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Pinky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" afterDir="false" />
     </list>
+    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +141,10 @@
       <workItem from="1678670014724" duration="788000" />
       <workItem from="1678732856766" duration="517000" />
       <workItem from="1678733421331" duration="5288000" />
+      <workItem from="1678739115500" duration="177000" />
+      <workItem from="1678739536572" duration="38000" />
+      <workItem from="1678741001162" duration="674000" />
+      <workItem from="1678750134280" duration="1525000" />
     </task>
     <task id="LOCAL−00001" summary="emil">
       <created>1675254954811</created>
@@ -216,7 +224,19 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1678738627870</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Changes by emil">
+      <created>1678739132301</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1678739132301</updated>
+    </task>
+    <task id="LOCAL−00015" summary="+workspace.xml">
+      <created>1678739222260</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1678739222260</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +269,10 @@
     <MESSAGE value="Added new classes" />
     <MESSAGE value="Added DifferentWall.java that Pacman can walk on" />
     <MESSAGE value="Ghosts now move around randomly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ghosts now move around randomly" />
+    <MESSAGE value="Changes by emil1" />
+    <MESSAGE value="Changes by emil" />
+    <MESSAGE value="+workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="+workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

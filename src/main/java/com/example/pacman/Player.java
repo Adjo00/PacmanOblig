@@ -7,7 +7,7 @@ import static com.example.pacman.Main.*;
 
 public class Player extends Circle implements MyShapes {
     Scene scene;
-    private Retning retning;
+    private static Retning retning;
     public static double speed = 1.5;
     double playerX, playerY;
     double lastPositionY, lastPositionX;
@@ -20,9 +20,9 @@ public class Player extends Circle implements MyShapes {
             //dette skjer før man kan gjøre noe... derfor timeline
             //Sier hvilke knapp som går hvilke retning
             switch (e.getCode()) {
-                case S -> retning = Retning.DOWN;
                 case W -> retning = Retning.UP;
                 case A -> retning = Retning.LEFT;
+                case S -> retning = Retning.DOWN;
                 case D -> retning = Retning.RIGHT;
             }
         });
