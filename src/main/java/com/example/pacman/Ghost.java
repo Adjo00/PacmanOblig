@@ -36,7 +36,10 @@ public class Ghost extends Circle implements MyShapes {
             case RIGHT -> setCenterX(getCenterX() - speed1);
         }
 
-
+        if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())){
+            newPlayer.setCenterY(55);
+            newPlayer.setCenterX(55);
+        }
     pane.getChildren().add(this);
     }
 }
