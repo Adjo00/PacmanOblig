@@ -7,13 +7,13 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Main extends Application {
     //public static
@@ -36,6 +36,7 @@ public class Main extends Application {
     public static ArrayList<Coins> coins = new ArrayList<>();
     public static ArrayList<Ghost> ghost = new ArrayList<>();
     public static ArrayList<DifferentWall> differentWalls = new ArrayList<>();
+    public static ArrayList<Powerup> powerPellets = new ArrayList<>();
 
     /**
      * Starter programmet, setter opp scene og new'er objekter som skal brukes.
@@ -80,22 +81,21 @@ public class Main extends Application {
         }
         for (Ghost g : ghost){
             g.update();
-            System.out.println(ghost);
+            //System.out.println(ghost);
         }
-        Iterator<Coins> iterator = coins.iterator();
-        while (iterator.hasNext()) {
-            Coins c = iterator.next();
-            c.update();
-            if (newPlayer.getBoundsInParent().intersects(c.getBoundsInParent())) {
-                iterator.remove();
-                scoreCount++;
-            }
-        }
-        highscore = new Text("HIGHSCORE:" + scoreCount);
+        Coins.coinRemove();
+        Powerup.powerPelletRemove();
+        highscore = new Text("HIGHSCORE: " + scoreCount);
         highscore.setX(50);
         highscore.setY(25);
         highscore.setFill(Color.WHITE);
         pane.getChildren().add(highscore);
+
+        lives = new Text("Lives: " + playerHealth);
+        lives.setX(150);
+        lives.setY(25);
+        lives.setFill(Color.WHITE);
+        pane.getChildren().add(lives);
         //spøkelse.update();
         newPlayer.update(); // oppdaterer bevegelsen til figuren
 

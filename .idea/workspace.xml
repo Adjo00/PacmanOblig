@@ -4,24 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="One ghost now moves, but gets stuck if direction is the same">
+    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Added Javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Clyde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/MyShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/MyShapes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" afterDir="false" />
     </list>
-    <list id="7cd91b30-53f2-492b-a241-5c91f6aeb5a9" name="Changes by emil" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
-    </list>
-    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil">
+    <list id="077836f1-3c56-4773-bf68-1fbe4cfeabd4" name="Changes by emil" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" afterDir="false" />
     </list>
+    <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,25 +36,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java">
-      <ranges>
-        <range start1="39" end1="39" start2="39" end2="44" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="56" end1="56" start2="61" end2="65" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="65" end1="66" start2="74" end2="75" changelist="7cd91b30-53f2-492b-a241-5c91f6aeb5a9" />
-        <range start1="70" end1="71" start2="79" end2="79" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="74" end1="74" start2="82" end2="83" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="75" end1="77" start2="84" end2="84" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="100" end1="100" start2="107" end2="111" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java">
       <ranges>
-        <range start1="13" end1="13" start2="13" end2="20" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="17" end1="18" start2="24" end2="24" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="20" end1="20" start2="26" end2="30" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="21" end1="22" start2="31" end2="31" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="28" end1="56" start2="37" end2="37" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="57" end1="58" start2="38" end2="42" changelist="baf5d837-2c86-4186-ab55-6c1d6c4564f5" />
+        <range start1="12" end1="12" start2="12" end2="13" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
+        <range start1="23" end1="24" start2="24" end2="26" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="41" end1="41" start2="43" end2="45" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java">
+      <ranges>
+        <range start1="9" end1="9" start2="9" end2="10" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="15" end1="16" start2="16" end2="16" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="33" end1="33" start2="33" end2="34" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
+        <range start1="38" end1="38" start2="39" end2="41" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="82" end1="83" start2="85" end2="86" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="84" end1="93" start2="87" end2="89" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java">
+      <ranges>
+        <range start1="13" end1="14" start2="13" end2="14" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
+        <range start1="39" end1="40" start2="39" end2="40" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
+        <range start1="57" end1="57" start2="57" end2="60" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
       </ranges>
     </file>
   </component>
@@ -70,23 +70,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31149426&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31149426",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\USN\OneDrive - USN\4 semester\OBJ2100\Oblig\Pacman" />
@@ -175,7 +176,14 @@
       <workItem from="1678739536572" duration="38000" />
       <workItem from="1678741001162" duration="674000" />
       <workItem from="1678750134280" duration="1525000" />
-      <workItem from="1678811656067" duration="1357000" />
+      <workItem from="1678811656067" duration="2467000" />
+      <workItem from="1678831987098" duration="4257000" />
+      <workItem from="1678844082741" duration="15000" />
+      <workItem from="1678844335594" duration="8000" />
+      <workItem from="1678844433725" duration="820000" />
+      <workItem from="1678879856108" duration="1574000" />
+      <workItem from="1678881934081" duration="854000" />
+      <workItem from="1678895142916" duration="2740000" />
     </task>
     <task id="LOCAL−00001" summary="emil">
       <created>1675254954811</created>
@@ -267,7 +275,19 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1678739222260</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="Added Javadoc">
+      <created>1678813454609</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1678813454609</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Changes by emil">
+      <created>1678813516631</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1678813516631</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,9 +321,10 @@
     <MESSAGE value="Added DifferentWall.java that Pacman can walk on" />
     <MESSAGE value="Ghosts now move around randomly" />
     <MESSAGE value="Changes by emil1" />
-    <MESSAGE value="Changes by emil" />
     <MESSAGE value="+workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="+workspace.xml" />
+    <MESSAGE value="Added Javadoc" />
+    <MESSAGE value="Changes by emil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by emil" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

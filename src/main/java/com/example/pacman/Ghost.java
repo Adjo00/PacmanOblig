@@ -21,7 +21,8 @@ public class Ghost extends Circle implements MyShapes {
     public Ghost(Scene scene, double x, double y, double radius) {
         super(x, y, radius);
         this.scene = scene;
-        retningspøkelse = Retning.UP;
+        retningspøkelse = Retning.NONE;
+
     }
 
     /**
@@ -39,6 +40,8 @@ public class Ghost extends Circle implements MyShapes {
         if (newPlayer.getBoundsInParent().intersects(getBoundsInParent())){
             newPlayer.setCenterY(55);
             newPlayer.setCenterX(55);
+            playerHealth = playerHealth - 1;
+            System.out.println(playerHealth);
         }
     pane.getChildren().add(this);
     }

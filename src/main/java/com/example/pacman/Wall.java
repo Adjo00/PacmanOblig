@@ -54,14 +54,17 @@ public class Wall extends Rectangle implements MyShapes {
             if (!this.getBoundsInParent().intersects(g.getBoundsInParent())) {
                 ghostLastPositionY = g.getCenterY();
                 ghostLastPositionX = g.getCenterX();
-                System.out.println("treffer inni");
+                //System.out.println("treffer inni");
             }
             if (this.getBoundsInParent().intersects(g.getBoundsInParent())) {
+                /*
                 Retning tilfeldig = Retning.randomDirection();
                 Ghost.retningspøkelse = tilfeldig;
                 System.out.println("treffer vegg");
                 g.setCenterY(ghostLastPositionY);
                 g.setCenterX(ghostLastPositionX);
+
+*/
             }
         }
         pane.getChildren().add(this);

@@ -4,8 +4,11 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 
 import static com.example.pacman.Main.ghost;
+import static com.example.pacman.Main.walls;
 
 public class Inky extends Ghost{
+    double ghostLastPositionY, ghostLastPositionX;
+    Retning retningspøkelse;
     /**
      * Dette er konstruktørmetoden for Inky, som er en subklasse av Ghost
      * @param scene scenen som Inky skal være i
@@ -18,6 +21,29 @@ public class Inky extends Ghost{
         super(scene, x, y, radius);
         setFill(color);
         ghost.add(this);
+    }
+
+    @Override
+    public void update() {
+            for (Wall w : walls) {
+                if (!this.getBoundsInParent().intersects(w.getBoundsInParent())) {
+                    ghostLastPositionY = this.getCenterY();
+                    ghostLastPositionX = this.getCenterX();
+                    //System.out.println("treffer inni");
+                }
+                if (this.getBoundsInParent().intersects(w.getBoundsInParent())) {
+
+                    Retning tilfeldig = Retning.randomDirection();
+                    this.retningspøkelse = tilfeldig;
+                    System.out.println("treffer vegg");
+
+                    this.setCenterY(ghostLastPositionY);
+                    this.setCenterX(ghostLastPositionX);
+
+
+                }
+            }
+
     }
 }
 

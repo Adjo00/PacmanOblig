@@ -55,6 +55,9 @@ public class Map {
                 else if(map[i][j] == 3){
                     walls.add(new Wall(j*tile, i*tile, Color.DARKGRAY));
                 }
+                else if(map[i][j] == 5){
+                    powerPellets.add(new Powerup(j*tile+16, i*tile+16, Color.LIGHTBLUE));
+                }
             }
         }
     }
