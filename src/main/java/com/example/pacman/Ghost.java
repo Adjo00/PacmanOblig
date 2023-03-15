@@ -2,14 +2,12 @@ package com.example.pacman;
 
 import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
-
 import static com.example.pacman.Main.*;
-import static com.example.pacman.Player.speed;
 
 public class Ghost extends Circle implements MyShapes {
     Scene scene;
     public static Retning retningspøkelse;
-    double speed1 = 1.5;
+    public static double speed1 = 0.3;
 
 
     /**

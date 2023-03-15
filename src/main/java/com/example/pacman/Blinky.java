@@ -2,7 +2,6 @@ package com.example.pacman;
 
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 
 import static com.example.pacman.Main.*;
 

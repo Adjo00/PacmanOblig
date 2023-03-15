@@ -2,9 +2,7 @@ package com.example.pacman;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-
 import java.util.Iterator;
-
 import static com.example.pacman.Main.*;
 
 public class Coins extends Circle implements MyShapes {

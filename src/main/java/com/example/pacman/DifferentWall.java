@@ -2,9 +2,7 @@ package com.example.pacman;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-
 import static com.example.pacman.Main.*;
-import static com.example.pacman.Player.speed;
 
 public class DifferentWall extends Rectangle implements MyShapes {
     /**

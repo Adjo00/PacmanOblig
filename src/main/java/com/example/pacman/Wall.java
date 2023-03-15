@@ -2,7 +2,7 @@ package com.example.pacman;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import java.util.ArrayList;
+import static com.example.pacman.Ghost.speed1;
 import static com.example.pacman.Main.*;
 import static com.example.pacman.Player.speed;
 
@@ -10,7 +10,8 @@ public class Wall extends Rectangle implements MyShapes {
 
     double playerX, playerY;
     double lastPositionY, lastPositionX;
-    double ghostLastPositionY, ghostLastPositionX;
+    double ghostLastPositionX, ghostLastPositionY;
+
 
     /**
      * Dette er konstruktørmetoden for wall, som er en subklasse av Rectangle
@@ -49,22 +50,29 @@ public class Wall extends Rectangle implements MyShapes {
             newPlayer.setCenterX(lastPositionX);
             //System.out.println("ok");
         }
-
         for (Ghost g : ghost) {
             if (!this.getBoundsInParent().intersects(g.getBoundsInParent())) {
                 ghostLastPositionY = g.getCenterY();
                 ghostLastPositionX = g.getCenterX();
-                //System.out.println("treffer inni");
+                switch (Retning.randomDirection()) {
+                    case DOWN -> g.setCenterY(g.getCenterY() - speed1);
+                    case UP -> g.setCenterY(g.getCenterY() + speed1);
+                    case LEFT -> g.setCenterX(g.getCenterX() + speed1);
+                    case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
+                }
+                System.out.println("treffer inni");
             }
             if (this.getBoundsInParent().intersects(g.getBoundsInParent())) {
-                /*
                 Retning tilfeldig = Retning.randomDirection();
-                Ghost.retningspøkelse = tilfeldig;
+                switch (tilfeldig) {
+                    case DOWN -> g.setCenterY(g.getCenterY() - speed1);
+                    case UP -> g.setCenterY(g.getCenterY() + speed1);
+                    case LEFT -> g.setCenterX(g.getCenterX() + speed1);
+                    case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
+                }
                 System.out.println("treffer vegg");
                 g.setCenterY(ghostLastPositionY);
                 g.setCenterX(ghostLastPositionX);
-
-*/
             }
         }
         pane.getChildren().add(this);

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Added Javadoc" />
-    <list id="077836f1-3c56-4773-bf68-1fbe4cfeabd4" name="Changes by emil" comment="added lives to pacman">
+    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Added Javadoc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Blinky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/DifferentWall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" afterDir="false" />
+    </list>
+    <list id="077836f1-3c56-4773-bf68-1fbe4cfeabd4" name="Changes by emil" comment="added lives to pacman">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" afterDir="false" />
     </list>
     <list id="baf5d837-2c86-4186-ab55-6c1d6c4564f5" name="Changes by emil1" comment="Changes by emil" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +33,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java">
+      <ranges>
+        <range start1="4" end1="5" start2="4" end2="4" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="6" end1="7" start2="5" end2="5" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="11" end1="12" start2="9" end2="11" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
+        <range start1="46" end1="46" start2="45" end2="46" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -150,7 +166,7 @@
       <workItem from="1678844433725" duration="820000" />
       <workItem from="1678879856108" duration="1574000" />
       <workItem from="1678881934081" duration="854000" />
-      <workItem from="1678895142916" duration="3113000" />
+      <workItem from="1678895142916" duration="4997000" />
     </task>
     <task id="LOCAL−00001" summary="emil">
       <created>1675254954811</created>
@@ -260,7 +276,19 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1678898259258</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="added lives to pacman">
+      <created>1678898270161</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1678898270161</updated>
+    </task>
+    <task id="LOCAL−00020" summary="Added Javadoc">
+      <created>1678898278970</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1678898278970</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
