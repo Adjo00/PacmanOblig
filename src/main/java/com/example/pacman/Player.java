@@ -9,8 +9,6 @@ public class Player extends Circle implements MyShapes {
     Scene scene;
     private static Retning retning;
     public static double speed = 1.5;
-    double playerX, playerY;
-    double lastPositionY, lastPositionX;
 
     /**
      * @param scene sceneen som player skal være i

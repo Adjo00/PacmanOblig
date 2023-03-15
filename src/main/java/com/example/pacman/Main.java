@@ -53,7 +53,6 @@ public class Main extends Application {
         pinky = new Pinky(scene, 480,540,tile/3,Color.PINK);
         inky = new Inky(scene, 530,540,tile/3,Color.CYAN);
         clyde = new Clyde(scene, 580,540,tile/3,Color.ORANGE);
-        //spøkelse = new Ghost(scene, 660,540,tile/3,Color.GREEN);
         run();
         stage.setTitle("Pacman");
         stage.setResizable(false);
