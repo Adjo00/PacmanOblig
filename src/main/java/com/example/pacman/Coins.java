@@ -2,6 +2,9 @@ package com.example.pacman;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+
+import java.util.Iterator;
+
 import static com.example.pacman.Main.*;
 
 public class Coins extends Circle implements MyShapes {
@@ -25,5 +28,16 @@ public class Coins extends Circle implements MyShapes {
             System.out.println("Score " + scoreCount);
         }
         pane.getChildren().add(this);
+    }
+    public static void coinRemove(){
+        Iterator<Coins> iterator = coins.iterator();
+        while (iterator.hasNext()) {
+            Coins c = iterator.next();
+            c.update();
+            if (newPlayer.getBoundsInParent().intersects(c.getBoundsInParent())) {
+                iterator.remove();
+                scoreCount++;
+            }
+        }
     }
 }

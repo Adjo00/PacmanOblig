@@ -28,9 +28,10 @@ public class Main extends Application {
     public static int horizontal = 980;
     //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
-    Text highscore;
+    Text highscore, lives;
     public static double speed = 1.5;
     public static int scoreCount = 0;
+    public static int playerHealth = 3;
 //Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
     public static ArrayList<Coins> coins = new ArrayList<>();
@@ -88,6 +89,7 @@ public class Main extends Application {
         highscore = new Text("HIGHSCORE: " + scoreCount);
         highscore.setX(50);
         highscore.setY(25);
+
         highscore.setFill(Color.WHITE);
         pane.getChildren().add(highscore);
 

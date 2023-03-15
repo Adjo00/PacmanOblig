@@ -11,6 +11,7 @@ public class Ghost extends Circle implements MyShapes {
     public static Retning retningspøkelse;
     double speed1 = 1.5;
 
+
     /**
      * Dette er konstruktørmetoden for ghost, og er superklasse for hver av de 4 ghostene
      * @param scene scenen som pøkelsen skal være i
