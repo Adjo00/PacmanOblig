@@ -11,7 +11,6 @@ public class Coins extends Circle implements MyShapes {
      * @param y y posisjonen til coins
      * @param color fargen til coins
      */
-    //Det er 292 coins i mappet
     public Coins(int x, int y, Color color){
         super(x,y,tile/4);
         setFill(color);

@@ -16,13 +16,11 @@ public class Player extends Circle implements MyShapes {
      * Den har en switch som sier hvilke knapper som går hvilke retninger
      */
     public Player(Scene scene) {
-        super(55,55,tile/3); //error fordi float eller no?
+        super(55,55,tile/3);
         setFill(Color.YELLOW);
-        this.scene = scene; //sier scene er d samma
-        retning = Retning.NONE; // default, hvis ikke løper den vekk...
-        scene.setOnKeyPressed(e -> { //forsatt usikker på scene.
-            //dette skjer før man kan gjøre noe... derfor timeline
-            //Sier hvilke knapp som går hvilke retning
+        this.scene = scene;
+        retning = Retning.NONE;
+        scene.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case W -> retning = Retning.UP;
                 case A -> retning = Retning.LEFT;
@@ -38,8 +36,6 @@ public class Player extends Circle implements MyShapes {
      * Den sjekker også om player kolliderer med wall, og da stopper den.
      */
     public void update(){
-        //lager en switch for å gi speed til figuren
-        //kan brukes for ghost for å la dem gå en vei
         switch(retning){
           case DOWN -> setCenterY(getCenterY() + speed);
           case UP -> setCenterY(getCenterY() - speed);

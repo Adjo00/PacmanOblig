@@ -12,7 +12,6 @@ public class Wall extends Rectangle implements MyShapes {
     double lastPositionY, lastPositionX;
     double ghostLastPositionX, ghostLastPositionY;
 
-
     /**
      * Dette er konstruktørmetoden for wall, som er en subklasse av Rectangle
      * Wall er da alle vegger i map
@@ -21,7 +20,6 @@ public class Wall extends Rectangle implements MyShapes {
      * @param color fargen til wall
      */
     public Wall(int x, int y, Color color){
-        //lager alle vegger om til rektangler, og gir dem verdi
         super(x,y,tile,tile);
         setFill(color);
     }
@@ -48,7 +46,6 @@ public class Wall extends Rectangle implements MyShapes {
             }
             newPlayer.setCenterY(lastPositionY);
             newPlayer.setCenterX(lastPositionX);
-            //System.out.println("ok");
         }
         for (Ghost g : ghost) {
             if (!this.getBoundsInParent().intersects(g.getBoundsInParent())) {
@@ -60,7 +57,6 @@ public class Wall extends Rectangle implements MyShapes {
                     case LEFT -> g.setCenterX(g.getCenterX() + speed1);
                     case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
                 }
-                System.out.println("treffer inni");
             }
             if (this.getBoundsInParent().intersects(g.getBoundsInParent())) {
                 Retning tilfeldig = Retning.randomDirection();
@@ -70,7 +66,6 @@ public class Wall extends Rectangle implements MyShapes {
                     case LEFT -> g.setCenterX(g.getCenterX() + speed1);
                     case RIGHT -> g.setCenterX(g.getCenterX() - speed1);
                 }
-                System.out.println("treffer vegg");
                 g.setCenterY(ghostLastPositionY);
                 g.setCenterX(ghostLastPositionX);
             }

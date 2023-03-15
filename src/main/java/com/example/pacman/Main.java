@@ -58,12 +58,10 @@ public class Main extends Application {
         stage.show();
     }
 
-
     /**
      * Inneholder en TimeLine som kjører en gameloop, den oppdaterer alt av bevegelse og endringer
      */
     public void run(){
-        //fps basically
         Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.014), e ->{
         //Se på timeline... alt som skal kjøres / oppdateres settes her
         //For å oppdatere hvilke wall d blir laget.
