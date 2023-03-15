@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Added Javadoc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Inky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Wall.java" afterDir="false" />
-    </list>
-    <list id="077836f1-3c56-4773-bf68-1fbe4cfeabd4" name="Changes by emil" comment="">
+    <list default="true" id="64d5f22a-353a-4b3c-9e22-642ef97d3774" name="Changes" comment="Added Javadoc" />
+    <list id="077836f1-3c56-4773-bf68-1fbe4cfeabd4" name="Changes by emil" comment="added lives to pacman">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Coins.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java" afterDir="false" />
@@ -34,32 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Ghost.java">
-      <ranges>
-        <range start1="12" end1="12" start2="12" end2="13" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
-        <range start1="23" end1="24" start2="24" end2="26" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="41" end1="41" start2="43" end2="45" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Main.java">
-      <ranges>
-        <range start1="9" end1="9" start2="9" end2="10" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="15" end1="16" start2="16" end2="16" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="33" end1="33" start2="33" end2="34" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
-        <range start1="38" end1="38" start2="39" end2="41" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="82" end1="83" start2="85" end2="86" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-        <range start1="84" end1="93" start2="87" end2="89" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/pacman/Map.java">
-      <ranges>
-        <range start1="13" end1="14" start2="13" end2="14" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
-        <range start1="39" end1="40" start2="39" end2="40" changelist="077836f1-3c56-4773-bf68-1fbe4cfeabd4" />
-        <range start1="57" end1="57" start2="57" end2="60" changelist="64d5f22a-353a-4b3c-9e22-642ef97d3774" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -183,7 +150,7 @@
       <workItem from="1678844433725" duration="820000" />
       <workItem from="1678879856108" duration="1574000" />
       <workItem from="1678881934081" duration="854000" />
-      <workItem from="1678895142916" duration="2740000" />
+      <workItem from="1678895142916" duration="3113000" />
     </task>
     <task id="LOCAL−00001" summary="emil">
       <created>1675254954811</created>
@@ -287,7 +254,13 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1678813516631</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="Added Javadoc">
+      <created>1678898259258</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1678898259258</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,9 +295,10 @@
     <MESSAGE value="Ghosts now move around randomly" />
     <MESSAGE value="Changes by emil1" />
     <MESSAGE value="+workspace.xml" />
-    <MESSAGE value="Added Javadoc" />
     <MESSAGE value="Changes by emil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by emil" />
+    <MESSAGE value="added lives to pacman" />
+    <MESSAGE value="Added Javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
