@@ -7,7 +7,6 @@ import java.util.Iterator;
 
 import static com.example.pacman.Main.*;
 import static com.example.pacman.Main.pane;
-import static com.example.pacman.Main.*;
 
 public class Powerup extends Rectangle {
     public Powerup(int x, int y, Color color){

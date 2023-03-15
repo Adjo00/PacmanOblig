@@ -42,6 +42,7 @@ public class Ghost extends Circle implements MyShapes {
             playerHealth = playerHealth - 1;
             System.out.println(playerHealth);
         }
+
     pane.getChildren().add(this);
     }
 }
