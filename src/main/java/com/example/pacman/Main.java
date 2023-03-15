@@ -21,7 +21,8 @@ public class Main extends Application {
     public static Pane pane = new Pane();
     public static int row = 28;
     public static Player newPlayer;
-    public static Ghost blinky, pinky, inky, clyde;
+    public static Ghost blinky, pinky, inky, clyde, spøkelse;
+
     Map kart = new Map();
     public static int vertical = 1010;
     public static int horizontal = 980;
