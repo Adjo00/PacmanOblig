@@ -7,7 +7,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -25,12 +24,10 @@ public class Main extends Application {
     Map kart = new Map();
     public static int vertical = 1010;
     public static int horizontal = 980;
-    //finner ut at hvor stort et tile er
     public static int tile = horizontal/row;
     Text highscore, lives;
     public static int scoreCount = 0;
     public static int playerHealth = 3;
-//Arraylist fordi d er flere en ett objedkt
     public static ArrayList<Wall> walls = new ArrayList<>();
     public static ArrayList<Coins> coins = new ArrayList<>();
     public static ArrayList<Ghost> ghost = new ArrayList<>();
@@ -45,7 +42,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(pane, horizontal, vertical);
-        kart.map();  // BARE EN GANG.
+        kart.map();
         newPlayer = new Player(scene);
         blinky = new Blinky(scene, 430,540,tile/3,Color.RED);
         pinky = new Pinky(scene, 480,540,tile/3,Color.PINK);
@@ -63,13 +60,11 @@ public class Main extends Application {
      */
     public void run(){
         Timeline time = new Timeline(new KeyFrame(Duration.seconds(0.014), e ->{
-        //Se på timeline... alt som skal kjøres / oppdateres settes her
-        //For å oppdatere hvilke wall d blir laget.
-        pane.getChildren().clear(); //for å renskeskjermen. hvis ikke blir d mange objekter stacket på hverandre. kommer til å lagge.
-        Rectangle skjerm = new Rectangle(0,0,horizontal,vertical); // lager et rektangel som dekker skjermen (hindre hvite merker)
+        pane.getChildren().clear();
+        Rectangle skjerm = new Rectangle(0,0,horizontal,vertical);
         skjerm.setFill(Color.BLACK);
         pane.getChildren().add(skjerm);
-        for(Wall w : walls){ //Laster inn veggene. går gjennom arraylisten. (Class - > navn -> arraylisten)
+        for(Wall w : walls){
             w.update();
         }
         for (DifferentWall df : differentWalls){
@@ -77,7 +72,6 @@ public class Main extends Application {
         }
         for (Ghost g : ghost){
             g.update();
-            //System.out.println(ghost);
         }
         Coins.coinRemove();
         Powerup.powerPelletRemove();
@@ -93,13 +87,10 @@ public class Main extends Application {
         lives.setY(25);
         lives.setFill(Color.WHITE);
         pane.getChildren().add(lives);
-        //spøkelse.update();
-        newPlayer.update(); // oppdaterer bevegelsen til figuren
+        newPlayer.update();
 
     }));
-        //Hvor mange ganger den skal runne. når den stopper, stopper greia å funke.
         time.setCycleCount(Animation.INDEFINITE);
-        //Sier når den skal starte
         time.playFromStart();
     }
 

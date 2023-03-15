@@ -6,7 +6,7 @@ import static com.example.pacman.Main.*;
 public class Map {
     /**
      * Dette er en 2D array som representerer kartet i spillet.
-     * 0 er tomme plasser, 1 er vegger, 2 er startposisjon for ghost, 3 er bare en grå vegg
+     * 0 er tomme plasser, 1 er vegger, 2 er startposisjon for ghost, 3 er bare en grå vegg, 5 er poweruppallets
      */
     public void map(){
         int[][] map = {
